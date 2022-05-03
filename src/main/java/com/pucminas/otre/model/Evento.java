@@ -31,7 +31,6 @@ public class Evento {
     private List<Artista> artistas;
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Ingresso> ingressos;
-    @ManyToOne
-    private Produtor produtor;
+    private String idProdutor;
     private Boolean ativado;
 }

@@ -9,7 +9,7 @@ import java.util.UUID;
 
 @Repository
 public interface EventoRepository extends JpaRepository<Evento, UUID> {
-    List<Evento> findByProdutorId(UUID produtorId);
+    List<Evento> findByIdProdutor(UUID idProdutor);
 
-    Evento findByIdAndProdutorId(UUID id, UUID produtorId);
+    Evento findByIdAndIdProdutor(UUID id, UUID idProdutor);
 }

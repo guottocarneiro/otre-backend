@@ -25,7 +25,7 @@ public class EventoDto {
     private String idProdutor;
     private Boolean ativado;
 
-    public Evento converter(Produtor produtor) {
-        return Evento.builder().nome(nome).descricao(descricao).data(data).endereco(endereco).artistas(artistas).ingressos(ingressos).produtor(produtor).ativado(ativado).build();
+    public Evento converter() {
+        return Evento.builder().nome(nome).descricao(descricao).data(data).endereco(endereco).artistas(artistas).ingressos(ingressos).idProdutor(idProdutor).ativado(ativado).build();
     }
 }
